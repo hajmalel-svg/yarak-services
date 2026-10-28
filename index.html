@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0f19">
+<meta name="description" content="یارک؛ همه خدمات، در محل شما">
+<title>یارک | همه خدمات، در محل شما</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#f5b800;--navy:#0b0f19;--ink:#111827;--muted:#64748b;--line:#e5e7eb;--paper:#fff;--soft:#f8fafc}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:"Vazirmatn",Tahoma,sans-serif;color:var(--ink);background:#fff;line-height:1.8}button,input,select,textarea{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(11,15,25,.96);backdrop-filter:blur(12px);color:white;border-bottom:1px solid #ffffff18}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem}.brand img{width:52px;height:52px;object-fit:contain;border-radius:50%;background:#111827}.navlinks{display:flex;align-items:center;gap:20px;font-size:.93rem}.navlinks a:hover{color:var(--yellow)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border:0;border-radius:12px;background:var(--yellow);color:#151515;font-weight:800;cursor:pointer;transition:.2s;box-shadow:0 6px 18px #f5b80025}.btn:hover{transform:translateY(-2px);filter:brightness(1.03)}.btn.secondary{background:transparent;color:white;border:1px solid #ffffff55;box-shadow:none}.btn.dark{background:var(--navy);color:white}.menu-toggle{display:none;background:none;color:white;border:1px solid #ffffff40;border-radius:10px;padding:8px 12px;font-size:1.2rem}
+.hero{min-height:610px;display:flex;align-items:center;color:white;position:relative;background:#101827 url("assets/yarak-hero.jpg") center/cover no-repeat;isolation:isolate}.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,rgba(7,11,20,.94) 0%,rgba(7,11,20,.78) 43%,rgba(7,11,20,.22) 100%),linear-gradient(0deg,rgba(7,11,20,.55),transparent 45%)}.hero-content{max-width:650px;padding:82px 0}.eyebrow{display:inline-block;color:var(--yellow);background:#f5b8001c;border:1px solid #f5b80055;border-radius:999px;padding:4px 14px;font-size:.88rem;font-weight:700}.hero h1{font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.35;margin:18px 0}.hero p{font-size:1.08rem;color:#e5e7eb;max-width:600px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#f8fafc;font-size:.9rem}.trust span:before{content:"✓";color:var(--yellow);font-weight:900;margin-left:7px}
+section{padding:78px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 36px}.section-head h2{font-size:clamp(1.7rem,3vw,2.5rem);margin:0 0 10px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.card{border:1px solid var(--line);border-radius:20px;padding:23px;background:white;box-shadow:0 8px 30px #0f172a08;transition:.22s}.card:hover{transform:translateY(-4px);box-shadow:0 15px 34px #0f172a10}.card .emoji{font-size:2rem;display:block;margin-bottom:10px}.card h3{margin:0 0 8px;font-size:1.13rem}.card p{color:var(--muted);font-size:.93rem;margin:0 0 14px}.card.featured{border:2px solid var(--yellow);background:linear-gradient(160deg,#fffdf4,#fff)}.tag{display:inline-block;border-radius:99px;padding:3px 10px;background:#fff2bf;color:#785800;font-size:.78rem;font-weight:800;margin-bottom:10px}
+.dark-section{background:var(--navy);color:white}.dark-section .section-head p{color:#cbd5e1}.roadside-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.steps{display:grid;gap:12px}.step{display:flex;align-items:center;gap:14px;background:#ffffff0b;border:1px solid #ffffff18;border-radius:15px;padding:13px}.step b{display:grid;place-items:center;min-width:38px;height:38px;border-radius:50%;background:var(--yellow);color:#111}.note{border-right:4px solid var(--yellow);padding:10px 15px;background:#f5b80012;color:#fef3c7;border-radius:8px}
+.soft{background:var(--soft)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}.form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 12px 30px #0f172a08}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.9rem;font-weight:700}.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid #cbd5e1;border-radius:10px;background:white;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#d6a000;box-shadow:0 0 0 3px #f5b80025}.field textarea{min-height:90px;resize:vertical}.help{font-size:.8rem;color:var(--muted)}.status{margin-top:14px;padding:12px;border-radius:10px;display:none}.status.show{display:block;background:#ecfdf5;color:#065f46;border:1px solid #a7f3d0}.status.warning{background:#fffbeb;color:#92400e;border-color:#fde68a}.placeholder-price{color:#64748b;font-weight:700}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.product-art{height:110px;display:grid;place-items:center;background:linear-gradient(135deg,#f8fafc,#e2e8f0);border-radius:14px;font-size:2.8rem;margin-bottom:14px}.positions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.position{border:1px solid var(--line);border-radius:12px;padding:14px;background:white;font-weight:700}.requirements{background:#fff8dd;border:1px solid #f5d66b;border-radius:16px;padding:18px;margin:18px 0}.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.contact-item{padding:18px;border:1px solid #ffffff24;border-radius:14px;background:#ffffff08}.contact-item small{display:block;color:#cbd5e1}.footer{background:#080b12;color:white;border-top:4px solid var(--yellow);padding:42px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer p,.footer li{color:#cbd5e1}.footer ul{padding:0;list-style:none}.footer li{margin:7px 0}.copyright{border-top:1px solid #ffffff1b;margin-top:28px;padding-top:16px;color:#94a3b8;font-size:.86rem}
+.robot{position:fixed;left:18px;bottom:18px;z-index:25}.robot-button{width:62px;height:62px;border:0;border-radius:50%;background:var(--yellow);font-size:1.8rem;box-shadow:0 8px 30px #0004;cursor:pointer}.robot-tip{position:absolute;bottom:72px;left:0;background:white;color:#111827;border:1px solid var(--line);border-radius:13px;padding:10px 13px;width:210px;box-shadow:0 8px 24px #0002;font-size:.85rem}.chat{position:absolute;bottom:75px;left:0;width:min(340px,calc(100vw - 36px));height:430px;background:white;color:#111827;border-radius:18px;box-shadow:0 20px 60px #0004;overflow:hidden;display:none;border:1px solid #e2e8f0}.chat.open{display:flex;flex-direction:column}.chat-head{background:var(--navy);color:white;padding:15px;display:flex;justify-content:space-between;align-items:center}.chat-head button{background:none;border:0;color:white;font-size:1.2rem}.chat-messages{padding:14px;flex:1;overflow:auto;background:#f8fafc}.bubble{padding:10px 12px;border-radius:12px;background:white;border:1px solid #e2e8f0;margin-bottom:10px;font-size:.9rem}.quick{display:flex;flex-wrap:wrap;gap:6px;padding:8px}.quick button{font-size:.75rem;border:1px solid #e2e8f0;border-radius:99px;padding:5px 8px;background:#fff;cursor:pointer}.chat-input{display:flex;gap:6px;padding:10px;border-top:1px solid #e2e8f0}.chat-input input{min-width:0;flex:1;border:1px solid #cbd5e1;border-radius:9px;padding:9px}.chat-input button{border:0;background:var(--yellow);border-radius:9px;padding:0 13px;font-weight:800}
+.loader{position:fixed;inset:0;background:#0b0f19;z-index:100;display:grid;place-items:center;color:white;transition:opacity .45s,visibility .45s}.loader.hidden{opacity:0;visibility:hidden;pointer-events:none}.loader-inner{text-align:center;animation:arrive 1.2s ease both}.loader img{width:min(220px,52vw);height:220px;object-fit:contain;filter:drop-shadow(0 0 18px #f5b80050);animation:pulse 1s ease-in-out infinite alternate}.loader .loader-word{font-weight:800;color:var(--yellow);font-size:1.2rem}.skip{position:absolute;bottom:28px;left:28px;background:#ffffff14;color:white;border:1px solid #ffffff40;border-radius:99px;padding:8px 15px}.spinner{width:25px;height:25px;border:3px solid #ffffff30;border-top-color:var(--yellow);border-radius:50%;margin:12px auto;animation:spin .7s linear infinite}@keyframes arrive{from{opacity:0;transform:translate(-60px,25px) scale(.7);filter:blur(5px)}to{opacity:1;transform:translate(0,0) scale(1);filter:blur(0)}}@keyframes pulse{from{transform:scale(.97) rotate(-2deg)}to{transform:scale(1.03) rotate(1deg)}}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media(max-width:900px){.navlinks{gap:10px;font-size:.82rem}.grid,.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.positions{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:570px}.roadside-grid{grid-template-columns:1fr}.contact-cards{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.nav{min-height:66px}.brand img{width:44px;height:44px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:66px;right:0;left:0;padding:16px 5%;background:#0b0f19;flex-direction:column;align-items:stretch;border-top:1px solid #ffffff20}.navlinks.open{display:flex}.navlinks a{padding:8px 0}.nav-cta{display:none}.hero{min-height:570px;background-position:58% center}.hero-content{padding:65px 0}.hero p{font-size:1rem}.actions .btn{width:100%}section{padding:56px 0}.grid,.product-grid{grid-template-columns:1fr}.two-col,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.positions{grid-template-columns:1fr 1fr}.contact-cards,.footer-grid{grid-template-columns:1fr}.form-card{padding:18px}.trust{gap:10px}.loader img{height:180px}}
+</style>
+</head>
+<body>
+<div class="loader" id="loader" aria-label="در حال بارگذاری">
+  <div class="loader-inner">
+    <img src="assets/yarak-logo.png" alt="لوگوی یارک" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <div style="display:none;font-size:5rem">🏍️</div>
+    <div class="loader-word">یارک، همراه مطمئن شما</div><div class="spinner"></div><small>همه خدمات، در محل شما</small>
+  </div>
+  <button class="skip" id="skipLoader">رد کردن ⟵</button>
+</div>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="یارک"><img src="assets/yarak-logo.png" alt="" onerror="this.style.display='none'"><span>یارک <small style="display:block;color:#cbd5e1;font-size:.67rem;font-weight:500">Yarak Services</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
+    <nav class="navlinks" id="navlinks">
+      <a href="#services">خدمات</a><a href="#shop">فروشگاه قطعات</a><a href="#carwash">کارواش</a><a href="#recruitment">استخدام</a><a href="#contact">تماس با ما</a>
+    </nav>
+    <a class="btn nav-cta" href="#order" data-service="امداد خودرو در راه">درخواست امداد فوری</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="container"><div class="hero-content">
+    <span class="eyebrow">یارک؛ هر جا کنار شما</span>
+    <h1>همه خدمات،<br><span style="color:var(--yellow)">در محل شما</span></h1>
+    <p>خودروی شما در راه مانده؟ یارک با موتورسوار امدادگر سیار در کمترین زمان به محل شما می‌رسد. خدمات خودرو، منزل و ساختمان را آسان‌تر درخواست کنید.</p>
+    <div class="actions"><a class="btn" href="#order" data-service="امداد خودرو در راه">درخواست امداد ←</a><a class="btn secondary" href="#recruitment">همکاری با یارک</a></div>
+    <div class="trust"><span>۲۴ ساعته</span><span>اعزام سیار</span><span>تعمیرکار متخصص</span></div>
+  </div></div>
+</section>
+<section id="services">
+  <div class="container"><div class="section-head"><h2>خدمات یارک</h2><p>خدمات موردنیازتان را انتخاب کنید؛ درخواست را ثبت می‌کنید و تیم یارک برای هماهنگی با شما تماس می‌گیرد.</p></div>
+  <div class="grid">
+    <article class="card featured"><span class="tag">خدمت اصلی</span><span class="emoji">🏍️</span><h3>امداد خودرو در راه</h3><p>پنچری، باتری، سوخت‌رسانی محدود، عیب‌یابی و اعزام تعمیرکار.</p><a class="btn" href="#order" data-service="امداد خودرو در راه">ثبت درخواست</a></article>
+    <article class="card"><span class="emoji">🚗</span><h3>خدمات خودرو</h3><p>تعویض روغن، تست باتری، تعمیرات و سرویس‌های دوره‌ای.</p><a href="#order" data-service="خدمات خودرو">استعلام و ثبت درخواست ←</a></article>
+    <article class="card"><span class="emoji">🏠</span><h3>تعمیر لوازم منزل</h3><p>ماشین لباس‌شویی، یخچال، کولر، تلویزیون و دیگر لوازم خانگی.</p><a href="#order" data-service="تعمیر لوازم منزل">ثبت درخواست ←</a></article>
+    <article class="card"><span class="emoji">🧰</span><h3>خدمات ساختمانی</h3><p>برق‌کاری، لوله‌کشی، رفع نشتی و تعمیرات عمومی ساختمان.</p><a href="#order" data-service="خدمات ساختمانی">ثبت درخواست ←</a></article>
+    <article class="card"><span class="emoji">🧽</span><h3>نظافت و شست‌وشو</h3><p>نظافت منزل و محل کار و خدمات شست‌وشوی دوره‌ای.</p><a href="#order" data-service="نظافت و شست‌وشو">ثبت درخواست ←</a></article>
+  </div></div>
+</section>
+<section class="dark-section" id="roadside">
+  <div class="container roadside-grid">
+    <div><div class="section-head" style="text-align:right;margin:0 0 20px"><h2>امداد خودرو در راه</h2><p>اگر خودرویتان از حرکت ایستاده، اطلاعات اولیه را برای هماهنگی امداد ثبت کنید.</p></div>
+      <p>امکان درخواست راهنمایی برای پنچری، باتری، سوخت‌رسانی محدود، خودروهای ازکارافتاده و هماهنگی یدک‌کش وجود دارد. نوع خدمت نهایی پس از بررسی درخواست مشخص می‌شود.</p>
+      <div class="note">لطفاً موقعیت دقیق، مدل خودرو و نوع مشکل را ثبت کنید.</div><div class="actions"><a class="btn" href="#order" data-service="امداد خودرو در راه">ثبت درخواست امداد</a></div>
+    </div>
+    <div class="steps"><div class="step"><b>۱</b><div><strong>ثبت درخواست</strong><div style="color:#cbd5e1;font-size:.9rem">شرح مشکل و موقعیت را وارد کنید.</div></div></div><div class="step"><b>۲</b><div><strong>تماس هماهنگی</strong><div style="color:#cbd5e1;font-size:.9rem">اطلاعات برای هماهنگی بررسی می‌شود.</div></div></div><div class="step"><b>۳</b><div><strong>هماهنگی اعزام</strong><div style="color:#cbd5e1;font-size:.9rem">جزئیات زمان و خدمت با شما هماهنگ می‌شود.</div></div></div><div class="step"><b>۴</b><div><strong>پیگیری مشکل</strong><div style="color:#cbd5e1;font-size:.9rem">وضعیت درخواست را با کد رهگیری بررسی کنید.</div></div></div></div>
+  </div>
+</section>
+<section class="soft" id="order">
+ <div class="container"><div class="section-head"><h2>ثبت سفارش خدمات</h2><p>فرم نمایشی نسخه اولیه است؛ برای ثبت واقعی و دریافت کد رهگیری پایدار باید دیتابیس متصل شود.</p></div>
+ <div class="two-col">
+  <form class="form-card" id="orderForm"><h3 style="margin-top:0">درخواست خدمت</h3><div class="form-grid">
+    <div class="field"><label for="serviceType">نوع خدمت *</label><select id="serviceType" required><option value="">انتخاب کنید</option><option>امداد خودرو در راه</option><option>خدمات خودرو</option><option>تعمیر لوازم منزل</option><option>خدمات ساختمانی</option><option>نظافت و شست‌وشو</option><option>کارواش</option><option>قطعات یدکی</option></select></div>
+    <div class="field"><label for="customerName">نام و نام خانوادگی *</label><input id="customerName" required autocomplete="name" placeholder="نام شما"></div>
+    <div class="field"><label for="customerPhone">شماره موبایل *</label><input id="customerPhone" required inputmode="tel" placeholder="09123456789"></div>
+    <div class="field"><label for="visitTime">زمان مراجعه</label><input id="visitTime" type="datetime-local"></div>
+    <div class="field full"><label for="address">نشانی *</label><input id="address" required placeholder="شهر، خیابان، پلاک یا نشانی دقیق"></div>
+    <div class="field full"><label for="problem">توضیحات مشکل *</label><textarea id="problem" required placeholder="مدل خودرو یا وسیله و شرح مشکل را بنویسید"></textarea></div>
+    <div class="field full"><label for="problemFile">تصویر یا ویدیو (اختیاری)</label><input id="problemFile" type="file" accept="image/*,video/*"><span class="help">در نسخه نمایشی فایل ارسال نمی‌شود.</span></div>
+    <div class="field full"><button class="btn" type="submit">ثبت درخواست آزمایشی</button></div>
+  </div><div class="status" id="orderStatus" role="status"></div><p class="help">پرداخت آنلاین: به‌زودی (در این نسخه غیرفعال است).</p></form>
+  <div class="form-card"><h3 style="margin-top:0">پیگیری سفارش</h3><p style="color:var(--muted)">کد رهگیری‌ای که همین مرورگر ساخته است را وارد کنید. این نسخه آزمایشی به سرور متصل نیست.</p><form id="trackForm"><div class="field"><label for="trackingCode">کد رهگیری</label><input id="trackingCode" placeholder="مثلاً YRK-123456" required></div><button class="btn dark" style="margin-top:12px" type="submit">پیگیری</button></form><div class="status" id="trackStatus" role="status"></div><hr style="border:0;border-top:1px solid var(--line);margin:24px 0"><h3>بعد از اتصال بک‌اند</h3><p style="color:var(--muted)">سفارش‌ها در دیتابیس ذخیره می‌شوند، کد رهگیری پایدار خواهند داشت و وضعیت را مدیر مجاز به‌روزرسانی می‌کند.</p></div>
+ </div></div>
+</section>
+<section id="carwash">
+ <div class="container"><div class="section-head"><h2>کارواش و شست‌وشو</h2><p>نوع خدمت را انتخاب کنید تا برای استعلام قیمت با شما هماهنگ کنیم.</p></div><div class="grid">
+  <article class="card"><span class="emoji">🚿</span><h3>شست‌وشوی ساده</h3><p>شست‌وشوی بیرونی خودرو.</p><p class="placeholder-price">قیمت: [استعلام]</p><a class="btn" href="#order" data-service="کارواش">استعلام قیمت</a></article>
+  <article class="card"><span class="emoji">✨</span><h3>شست‌وشوی کامل</h3><p>خدمات کامل‌تر متناسب با خودرو.</p><p class="placeholder-price">قیمت: [استعلام]</p><a class="btn" href="#order" data-service="کارواش">استعلام قیمت</a></article>
+  <article class="card"><span class="emoji">🧼</span><h3>کارواش داخلی و خارجی</h3><p>نظافت کابین و بدنه.</p><p class="placeholder-price">قیمت: [استعلام]</p><a class="btn" href="#order" data-service="کارواش">استعلام قیمت</a></article>
+  <article class="card"><span class="emoji">💎</span><h3>پولیش</h3><p>بررسی و استعلام خدمات پولیش.</p><p class="placeholder-price">قیمت: [استعلام]</p><a class="btn" href="#order" data-service="کارواش">استعلام قیمت</a></article>
+ </div></div>
+</section>
+<section class="soft" id="shop">
+ <div class="container"><div class="section-head"><h2>فروشگاه قطعات و لوازم خودرو</h2><p>برای اطلاع از موجودی و قیمت، درخواست خود را ارسال کنید.</p></div><div class="product-grid">
+  <article class="card"><div class="product-art">⚙️</div><h3>قطعات یدکی</h3><p>قطعات موردنیاز خودروی شما.</p><p class="placeholder-price">قیمت: استعلام</p><a class="btn" href="#order" data-service="قطعات یدکی">استعلام قیمت</a></article>
+  <article class="card"><div class="product-art">🛢️</div><h3>روغن موتور</h3><p>انتخاب بر اساس مدل خودرو و مشخصات فنی.</p><p class="placeholder-price">قیمت: استعلام</p><a class="btn" href="#order" data-service="قطعات یدکی">استعلام قیمت</a></article>
+  <article class="card"><div class="product-art">🧰</div><h3>لوازم جانبی خودرو</h3><p>لوازم کاربردی و جانبی.</p><p class="placeholder-price">قیمت: استعلام</p><a class="btn" href="#order" data-service="قطعات یدکی">استعلام قیمت</a></article>
+  <article class="card"><div class="product-art">🔋</div><h3>باتری خودرو</h3><p>راهنمایی برای انتخاب باتری مناسب.</p><p class="placeholder-price">قیمت: استعلام</p><a class="btn" href="#order" data-service="قطعات یدکی">استعلام قیمت</a></article>
+ </div></div>
+</section>
+<section id="recruitment">
+ <div class="container"><div class="section-head"><h2>به تیم یارک بپیوندید</h2><p>فرم زیر برای نمونه اولیه است. ارسال واقعی رزومه و ذخیره امن اطلاعات پس از راه‌اندازی بک‌اند فعال می‌شود.</p></div>
+ <div class="positions"><div class="position">🏍️ موتورسوار امدادگر سیار</div><div class="position">🚗 تعمیرکار خودرو</div><div class="position">🧽 متخصص شست‌وشوی خودرو</div><div class="position">🛒 فروشنده و بازاریاب قطعات</div><div class="position">⚡ تکنسین برق</div><div class="position">🔧 لوله‌کش</div><div class="position">🧹 نیروی نظافت</div><div class="position">☎️ پذیرش و پاسخ‌گویی تلفنی</div></div>
+ <div class="requirements"><strong>راهنمای ثبت‌نام و مدارک</strong><p style="margin-bottom:0">۱. مدارک موردنیاز را آماده کنید ← ۲. فرم را تکمیل کنید ← ۳. برای مصاحبه هماهنگ می‌شوید ← ۴. آموزش و شروع همکاری. مدارک: کارت ملی معتبر، گواهینامه موتورسیکلت برای امدادگر، کارت پایان خدمت در صورت لزوم و سابقه کار در صورت وجود.</p></div>
+ <form class="form-card" id="jobForm"><h3 style="margin-top:0">فرم استخدام</h3><div class="form-grid">
+  <div class="field"><label for="jobName">نام و نام خانوادگی *</label><input id="jobName" required></div><div class="field"><label for="jobPhone">شماره موبایل *</label><input id="jobPhone" inputmode="tel" required placeholder="09123456789"></div>
+  <div class="field"><label for="jobCity">شهر *</label><input id="jobCity" required></div><div class="field"><label for="jobPosition">سمت مورد علاقه *</label><select id="jobPosition" required><option value="">انتخاب کنید</option><option>موتورسوار امدادگر سیار</option><option>تعمیرکار خودرو</option><option>متخصص شست‌وشوی خودرو</option><option>فروشنده و بازاریاب قطعات خودرو</option><option>تکنسین برق</option><option>لوله‌کش</option><option>نظافتچی</option><option>پذیرش و پاسخ‌گویی تلفنی</option></select></div>
+  <div class="field"><label for="jobExperience">سابقه کاری</label><input id="jobExperience" placeholder="مثلاً ۲ سال"></div><div class="field"><label for="resume">رزومه (PDF/DOC)</label><input id="resume" type="file" accept=".pdf,.doc,.docx"></div>
+  <div class="field"><label for="portrait">عکس پرسنلی</label><input id="portrait" type="file" accept="image/*"></div><div class="field full"><label for="jobNotes">توضیحات</label><textarea id="jobNotes"></textarea></div>
+  <div class="field full"><button class="btn" type="submit">ثبت آزمایشی درخواست استخدام</button><span class="help">این نسخه فایل یا اطلاعات را برای شرکت ایمیل نمی‌کند؛ برای امنیت، اتصال بک‌اند لازم است.</span></div>
+ </div><div class="status" id="jobStatus" role="status"></div></form>
+ </div>
+</section>
+<section class="dark-section" id="contact">
+ <div class="container"><div class="section-head"><h2>تماس با یارک</h2><p>برای هماهنگی خدمت، از راه‌های ارتباطی زیر استفاده کنید.</p></div>
+ <div class="contact-cards"><div class="contact-item"><strong>☎️ تلفن دفتر</strong><small>تماس سریع</small><a href="tel:02166302454" dir="ltr">02-166 30 24 54</a></div><div class="contact-item"><strong>📱 موبایل و واتساپ</strong><small>پاسخ‌گویی و هماهنگی</small><a href="tel:09384546752" dir="ltr">0938 45 46 752</a><br><a href="https://wa.me/989384546752" target="_blank" rel="noopener">گفت‌وگو در واتساپ</a></div><div class="contact-item"><strong>✉️ ایمیل</strong><small>ارتباط با شرکت</small><a href="mailto:Www.yarakservice@gmail.com">Www.yarakservice@gmail.com</a></div></div>
+ <p style="text-align:center;color:#cbd5e1;margin-top:24px">ساعات پاسخ‌گویی: ۲۴ ساعته · تلگرام و نشانی: به‌زودی</p>
+ <form class="form-card" id="contactForm" style="max-width:680px;margin:28px auto;color:var(--ink)"><h3 style="margin-top:0">پیام به یارک</h3><div class="form-grid"><div class="field"><label for="contactName">نام</label><input id="contactName" required></div><div class="field"><label for="contactPhone">شماره موبایل</label><input id="contactPhone" inputmode="tel" required></div><div class="field full"><label for="contactMessage">پیام</label><textarea id="contactMessage" required></textarea></div><div class="field full"><button class="btn" type="submit">ثبت پیام آزمایشی</button></div></div><div class="status" id="contactStatus"></div></form>
+ </div>
+</section>
+<section class="soft" id="admin-note"><div class="container"><div class="section-head"><h2>پنل مدیریت</h2><p>پنل امن مدیریت درخواست‌های استخدام در فاز بعدی پیاده‌سازی می‌شود؛ شامل ورود مدیر، لیست درخواست‌ها و لینک خصوصی دانلود رزومه و عکس. این صفحه عمومی، پنل مدیریت نیست.</p></div></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="#home"><img src="assets/yarak-logo.png" alt="" onerror="this.style.display='none'"><span>یارک | Yarak Services</span></a><p>یارک، همراه مطمئن شما در تمام لحظات.</p><p>همه خدمات، در محل شما</p></div><div><strong>دسترسی سریع</strong><ul><li><a href="#services">خدمات</a></li><li><a href="#order">ثبت سفارش</a></li><li><a href="#shop">فروشگاه قطعات</a></li><li><a href="#recruitment">استخدام</a></li></ul></div><div><strong>ارتباط با ما</strong><ul><li><a href="tel:02166302454">02-166 30 24 54</a></li><li><a href="tel:09384546752">0938 45 46 752</a></li><li><a href="mailto:Www.yarakservice@gmail.com">Www.yarakservice@gmail.com</a></li></ul></div></div><div class="copyright">© یارک — نسخه اولیه نمایشی. امکاناتی که به سرور متصل نشده‌اند، هنوز ثبت واقعی انجام نمی‌دهند.</div></div></footer>
+<div class="robot">
+ <div class="robot-tip" id="robotTip">سلام! من دستیار هوشمند یارک هستم. برای راهنمایی بزن روی من.</div>
+ <div class="chat" id="chat"><div class="chat-head"><strong>🤖 دستیار هوشمند یارک</strong><button id="closeChat" aria-label="بستن">×</button></div><div class="chat-messages" id="chatMessages"><div class="bubble">سلام! برای خدمات یارک راهنمایی‌ات می‌کنم. خودرو در راه مانده، قطعه می‌خواهی یا درباره استخدام سؤال داری؟</div></div><div class="quick"><button data-chat="خودرو در راه مانده‌ام">خودرو در راه مانده‌ام</button><button data-chat="قطعات یدکی">قطعات یدکی</button><button data-chat="شست‌وشوی خودرو">شست‌وشوی خودرو</button><button data-chat="استخدام">استخدام</button><button data-chat="تماس با کارشناس">تماس با کارشناس</button></div><form class="chat-input" id="chatForm"><input id="chatText" placeholder="پیامت را بنویس..." required><button>ارسال</button></form></div>
+ <button class="robot-button" id="robotButton" aria-label="باز کردن دستیار">🤖</button>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const loader=$('#loader');
+function hideLoader(){loader.classList.add('hidden')}
+$('#skipLoader').addEventListener('click',hideLoader);
+window.addEventListener('load',()=>setTimeout(hideLoader,1800));
+setTimeout(hideLoader,2600);
+$('#menuToggle').addEventListener('click',()=>$('#navlinks').classList.toggle('open'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>$('#navlinks').classList.remove('open')));
+document.querySelectorAll('[data-service]').forEach(a=>a.addEventListener('click',()=>{const s=$('#serviceType');if(s)s.value=a.dataset.service;}));
+function normalizeDigits(s){return s.replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[\s-]/g,'')}
+function validPhone(v){const n=normalizeDigits(v);return /^(09\d{9}|\+989\d{9}|00989\d{9})$/.test(n)}
+function showStatus(el,msg,warning=false){el.textContent=msg;el.className='status show'+(warning?' warning':'')}
+$('#orderForm').addEventListener('submit',e=>{e.preventDefault();const phone=$('#customerPhone').value;if(!validPhone(phone)){showStatus($('#orderStatus'),'شماره موبایل معتبر وارد کنید؛ نمونه: 09123456789',true);return}const code='YRK-'+Math.floor(100000+Math.random()*900000);sessionStorage.setItem('yarak-'+code,JSON.stringify({service:$('#serviceType').value,name:$('#customerName').value,status:'pending'}));showStatus($('#orderStatus'),'درخواست آزمایشی شما در همین مرورگر ثبت شد. کد رهگیری: '+code+' — این اطلاعات هنوز به سرور ارسال نشده است.');$('#trackingCode').value=code;});
+$('#trackForm').addEventListener('submit',e=>{e.preventDefault();const code=$('#trackingCode').value.trim().toUpperCase();const raw=sessionStorage.getItem('yarak-'+code);if(!raw){showStatus($('#trackStatus'),'این کد در همین نشست مرورگر پیدا نشد. در نسخه فعلی رهگیری فقط برای درخواست آزمایشی همین مرورگر کار می‌کند.',true);return}const o=JSON.parse(raw);showStatus($('#trackStatus'),'وضعیت: در انتظار بررسی (pending) · خدمت: '+o.service+' · این وضعیت نمایشی است.');});
+$('#jobForm').addEventListener('submit',e=>{e.preventDefault();if(!validPhone($('#jobPhone').value)){showStatus($('#jobStatus'),'شماره موبایل معتبر وارد کنید؛ نمونه: 09123456789',true);return}showStatus($('#jobStatus'),'فرم استخدام بررسی اولیه شد، اما در این نسخه اطلاعات یا فایل‌ها ذخیره و ایمیل نمی‌شوند. پس از اتصال امن دیتابیس فعال خواهد شد.');});
+$('#contactForm').addEventListener('submit',e=>{e.preventDefault();if(!validPhone($('#contactPhone').value)){showStatus($('#contactStatus'),'شماره موبایل معتبر وارد کنید.',true);return}showStatus($('#contactStatus'),'این فرم نمایشی است؛ برای ارسال واقعی پیام باید بک‌اند متصل شود.')});
+$('#robotButton').addEventListener('click',()=>{$('#chat').classList.toggle('open');$('#robotTip').style.display='none'});
+$('#closeChat').addEventListener('click',()=>$('#chat').classList.remove('open'));
+function addBubble(text){const d=document.createElement('div');d.className='bubble';d.textContent=text;$('#chatMessages').appendChild(d);$('#chatMessages').scrollTop=$('#chatMessages').scrollHeight}
+function reply(text){const t=text.toLowerCase();if(t.includes('راه')||t.includes('امداد')||t.includes('خودرو'))return 'برای درخواست امداد، مدل خودرو، نوع مشکل و نشانی دقیق را در فرم ثبت سفارش وارد کنید. ثبت این نسخه آزمایشی اعزام واقعی ایجاد نمی‌کند.';if(t.includes('قطعه'))return 'برای قطعات یدکی، نام قطعه و مدل خودرو را در بخش ثبت سفارش بنویسید تا در نسخه نهایی درخواست استعلام ثبت شود.';if(t.includes('شست')||t.includes('کارواش'))return 'خدمات کارواش شامل شست‌وشوی ساده، کامل، داخلی و خارجی و استعلام پولیش است. قیمت نهایی باید هماهنگ شود.';if(t.includes('استخدام')||t.includes('رزومه'))return 'از بخش استخدام سمت مورد علاقه و اطلاعات تماس را وارد کنید. ارسال واقعی رزومه در نسخه بعدی فعال می‌شود.';if(t.includes('کارشناس')||t.includes('تماس'))return 'برای تماس با دفتر از شماره 02166302454 یا موبایل 09384546752 استفاده کنید.';return 'من فقط درباره خدمات یارک راهنمایی می‌کنم. بگو امداد خودرو، قطعات، کارواش یا استخدام مدنظرت است.'}
+function sendChat(text){if(!text.trim())return;addBubble('شما: '+text);setTimeout(()=>addBubble(reply(text)),180)}
+$('#chatForm').addEventListener('submit',e=>{e.preventDefault();sendChat($('#chatText').value);$('#chatText').value=''});
+document.querySelectorAll('[data-chat]').forEach(b=>b.addEventListener('click',()=>sendChat(b.dataset.chat)));
+document.querySelectorAll('a,button').forEach(el=>{if(el.closest('.robot')||el.id==='skipLoader')return;el.addEventListener('click',()=>{const tips={'خدمات':'انواع خدمات خودرو، منزل، ساختمان و نظافت را ببینید.','فروشگاه قطعات':'برای قطعات و لوازم خودرو استعلام بگیرید.','استخدام':'فرم همکاری با تیم یارک را تکمیل کنید.','تماس با ما':'از راه‌های ارتباطی برای هماهنگی استفاده کنید.'};const label=(el.innerText||'').trim();const tip=Object.keys(tips).find(k=>label.includes(k));if(tip){$('#robotTip').textContent=tips[tip];$('#robotTip').style.display='block';setTimeout(()=>$('#robotTip').style.display='none',3500)}})});
+</script>
+</body>
+</html>
